@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = ({ children, CounterFeedback }) => (
-  <button type="button" onClick={CounterFeedback}>
-    {children}
+const Button = ({ options, onLeaveFeedback }) => (
+  <button type="button" onClick={onLeaveFeedback} name={options}>
+    {options}
   </button>
 );
 Button.propTypes = {
-  children: PropTypes.string.isRequired,
-  CounterFeedback: PropTypes.func.isRequired,
+  options: PropTypes.string.isRequired,
+  onLeaveFeedback: PropTypes.func.isRequired,
 };
 export default Button;

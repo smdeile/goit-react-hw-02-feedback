@@ -11,21 +11,21 @@ export default class App extends Component {
     neutral: 0,
     bad: 0,
   };
-  handleButtonGood = () => {
-    this.setState(prevState => ({
-      good: prevState.good + this.props.step,
-    }));
-  };
-  handleButtonNeutral = () => {
-    this.setState(prevState => ({
-      neutral: prevState.neutral + this.props.step,
-    }));
-  };
-  handleButtonBad = () => {
-    this.setState(prevState => ({
-      bad: prevState.bad + this.props.step,
-    }));
-  };
+  // handleButtonGood = () => {
+  //   this.setState(prevState => ({
+  //     good: prevState.good + this.props.step,
+  //   }));
+  // };
+  // handleButtonNeutral = () => {
+  //   this.setState(prevState => ({
+  //     neutral: prevState.neutral + this.props.step,
+  //   }));
+  // };
+  // handleButtonBad = () => {
+  //   this.setState(prevState => ({
+  //     bad: prevState.bad + this.props.step,
+  //   }));
+  // };
   totalFeedback = () => {
     return this.state.good + this.state.neutral + this.state.bad;
   };
